@@ -1,0 +1,145 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 1080px;
+  height: 1350px;
+  margin: 0 auto;
+  padding: 0 60px 20px;
+  background-image: var(--image-player);
+  background-size: cover;
+  background-position: center;
+  color: var(--color-text-black);
+}
+
+/* Tarjeta */
+#card {
+  width: 100%;
+  background: var(--color-primary-background);
+  border-radius: 40px;
+}
+
+/* Encabezado */
+#header {
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  padding: 20px 32px;
+  border-radius: 12px 12px 0 0;
+  border-bottom: 6px solid var(--color-accent);
+}
+
+/* Información del torneo */
+#tournament-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#logo {
+  height: 100px;
+}
+
+#tournament-title {
+  font-weight: 700;
+  font-size: 44px;
+}
+
+#date_and_place {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 28px;
+  color: var(--color-text-black-muted);
+}
+
+/* Encabezado de resultados */
+#pairings-header {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.small-dot,
+.dot {
+  border-radius: 100%;
+}
+
+.small-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--color-text-black-muted);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: var(--color-text-black);
+}
+
+/* Contenedor de resultados */
+#pairings-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0 32px 20px;
+}
+
+/* Fila de emparejamiento */
+.pairing-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 24px;
+  background-color: var(--color-secondary-background);
+}
+
+/* Jugador */
+.player {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-name {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.player-club {
+  font-size: 24px;
+  color: var(--color-text-black-muted);
+}
+
+/* Resultado */
+.result {
+  flex-shrink: 0;
+  padding: 8px 0;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  background-color: var(--color-accent);
+  border-radius: 8px;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}

@@ -1,0 +1,91 @@
+:root {
+  --image-player: url('/public/player2.png');
+
+  --color-text-black: #000000d9;
+  --color-text-white: #ffffffd9;
+  --color-text-black-muted: rgba(0, 0, 0, 0.6);
+  --color-text-white-muted: rgba(255, 255, 255, 0.6);
+  --color-accent: #000000d9;
+  --color-primary-background: #f4f4f5;
+  --color-secondary-background: #ffffff;
+
+  /* Dark design */
+  /* --color-text: #ffffffd9;
+  --color-text-muted: rgba(255, 255, 255, 0.6);
+  --color-accent: #00598abf;
+  --color-primary-background: #27272a;
+  --color-secondary-background: #18181b; */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100dvh;
+  overflow: auto;
+  font-family: 'Roboto', serif;
+  background-color: white;
+  color: var(--color-white-soft);
+}
+
+#logo {
+  flex-shrink: 0;
+  border-radius: 100%;
+}
+
+#round-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#buttons {
+  width: max-content;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Botón de captura */
+.button-capture {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 12px;
+  background-color: #27272a;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-button,
+.round-button {
+  padding: 16px 24px;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  background-color: white;
+  color: #27272a;
+  text-decoration: none;
+  width: max-content;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}

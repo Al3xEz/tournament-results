@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pairings</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/pairings.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="round-buttons"></div>
+
+    <div id="buttons">
+      <button class="button-capture" onclick="takeScreenShot()">
+        Tomar captura
+      </button>
+
+      <a class="nav-button" href="/standings.html">Ver clasificación</a>
+    </div>
+
+    <main id="post">
+      <div id="card">
+        <header id="header">
+          <img id="logo" src="/public/ponziani.png" alt="logo" />
+          <div id="tournament-info">
+            <h1 id="tournament-title">Liga Ponziani 2025</h1>
+            <div id="date_and_place">
+              <p id="tournament-date">21 de junio de 2025</p>
+              <div class="small-dot"></div>
+              <p id="tournament-place">Casa España</p>
+            </div>
+          </div>
+          <img id="logo" src="/public/AjedrezCostaRica_Logo.webp" alt="logo" />
+        </header>
+
+        <div id="pairings">
+          <div id="pairings-header">
+            <p id="round-number"></p>
+            <div class="dot"></div>
+            <p>Mesas 1-5</p>
+          </div>
+
+          <div id="pairings-container">
+            <!-- Se insertan dinámicamente -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      defer
+    ></script>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/pairings.js"></script>
+  </body>
+</html>

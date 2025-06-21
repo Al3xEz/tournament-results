@@ -1,0 +1,91 @@
+/* Contenedor principal */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1080px;
+  height: 1350px;
+  margin: 0 auto;
+  padding: 0 60px;
+  color: var(--color-text-black);
+  background-color: var(--color-primary-background);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+#event-title {
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#event-subtitle {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#logo {
+  height: 120px;
+}
+
+#players {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.player-row {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-accent);
+  height: 88px;
+  color: white;
+}
+
+.rank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.name_and_club {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.name {
+  font-size: 36px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.club {
+  font-size: 28px;
+  width: 100%;
+  color: var(--color-text-white);
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  font-size: 36px;
+  font-weight: 500;
+}
